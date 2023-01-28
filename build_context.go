@@ -54,6 +54,10 @@ type CommonContext struct {
 	ctx *gin.Context
 }
 
+func (c *CommonContext) Context() *gin.Context {
+	return c.ctx
+}
+
 func (c *CommonContext) JSONResponse(data interface{}) {
 	c.ctx.JSON(200, ReturnCode{
 		Code: SuccessCode,
