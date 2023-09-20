@@ -6,8 +6,6 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-type 
-
 type CommonContext struct {
 	ctx *gin.Context
 }
