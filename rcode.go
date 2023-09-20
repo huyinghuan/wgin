@@ -26,7 +26,7 @@ func (r ReturnCode) GetData() interface{} {
 
 func (r *ReturnCode) SetMsg(msg string) ReturnCode{
 	r.Msg = msg
-	return r
+	return *r
 }
 
 type IReturnCode interface {

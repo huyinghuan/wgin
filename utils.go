@@ -1,5 +1,5 @@
 package wgin
-
+import "strconv"
 
 func getDefaultInt64(value string, defaultValue ...int64) int64 {
 	d := int64(0)
